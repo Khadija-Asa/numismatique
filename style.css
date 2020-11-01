@@ -54,42 +54,70 @@ h2 {
 }
 
 .container-part3 {
+  /* align-items: center;
+  /* display: flex; */
+  margin: 20px;
   margin-bottom: 40px;
 }
+
+/* .coins,
+.kennedy
+.stock {
+  display: flex;
+  flex-direction: column;
+} */
 
 .coins {
   background: no-repeat url(/images/coins.png);
   width: 100%;
-  height: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+  box-shadow:  2px 2px 2px #D19D2A;
 }
 
 .kennedy {
   background: no-repeat url(/images/kennedycoin.png);
   width: 100%;
-  height: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+  box-shadow:  2px 2px 2px #D19D2A;
 }
 
 .stock {
   background: no-repeat url(/images/stockcoin.png);
   width: 100%;
-  height: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+  box-shadow:  2px 2px 2px #D19D2A;
 }
 
 .gold .gold4 {
   text-align: center;
 }
 
-.goldpesetas {
-  background: no-repeat url(/images/goldpesetas.png);
-  height: 230px;
+.goldpesetas,
+.silverpesetas {
+  background: center / cover no-repeat url(/images/goldpesetas.png);
+  width: 250px;
+  height: 125px;
 }
 
 .silverpesetas {
-  background: no-repeat url(/images/silverpesetas.png);
-  height: 280px;
+  background: center / cover no-repeat url(/images/silverpesetas.png);
+  width: 291px;
+  height: 120px;
+}
+
+.goldpesetas,
+.silverpesetas {
+  margin-top: 25px;
 }
 
 
 @media screen and (min-width: 768px) {
   
+}
+
+@media screen and (min-width: 1200px) {
+
 }
