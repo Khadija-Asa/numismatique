@@ -5,7 +5,7 @@
 }
 
 .background {
-  background: url(images/headercoin.png);
+  background: center / cover no-repeat url(images/headercoin.png);
   display: flex;
   height: 300px;
   position: relative;
@@ -29,9 +29,17 @@
   margin-left: 100px;
 }
 
-.text1 {
-  margin: 20px;
+.text1,
+.text2,
+.text3,
+.text4 {
+  margin-left: 20px;
+  padding-bottom: 20px;;
 }
+
+/* .holecoin {
+  width: 100px;
+} */
 
 .gold {
   background-color: #D19D2A;
@@ -50,7 +58,6 @@ h2 {
 .container-part2,
 .container-part4 {
   background-color: rgba(199, 172, 140, 0.22);
-  padding: 20px;
 }
 
 .container-part3 {
@@ -68,7 +75,7 @@ h2 {
 } */
 
 .coins {
-  background: no-repeat url(/images/coins.png);
+  background: center / cover no-repeat url(/images/coins.png);
   width: 100%;
   height: 120px;
   margin-bottom: 10px;
@@ -76,7 +83,7 @@ h2 {
 }
 
 .kennedy {
-  background: no-repeat url(/images/kennedycoin.png);
+  background: center / cover no-repeat url(/images/kennedycoin.png);
   width: 100%;
   height: 120px;
   margin-bottom: 10px;
@@ -84,21 +91,21 @@ h2 {
 }
 
 .stock {
-  background: no-repeat url(/images/stockcoin.png);
+  background: center / cover  no-repeat url(/images/stockcoin.png);
   width: 100%;
   height: 120px;
   margin-bottom: 10px;
   box-shadow:  2px 2px 2px #D19D2A;
 }
 
-.gold .gold4 {
+/* .gold .gold4 {
   text-align: center;
-}
+} */
 
 .goldpesetas,
 .silverpesetas {
   background: center / cover no-repeat url(/images/goldpesetas.png);
-  width: 250px;
+  width: 100%;
   height: 125px;
 }
 
@@ -115,9 +122,83 @@ h2 {
 
 
 @media screen and (min-width: 768px) {
-  
+  main  {
+    font-size: 20px;
+  }
+  .doublecoins {
+    text-align: center;
+  }
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    margin-left: 35px;
+  }
+  .holecoin {
+    margin-left: 450px;
+  }
+  .four-coins {
+    margin: 30px;
+    margin-left: 200px;
+  }
+  .coins,
+  .kennedy,
+  .stock {
+    width: 100%;
+    height: 200px;
+  }
+  .goldpesetas {
+    height: 250px;
+    width: 470px;
+    margin-left: 50px;
+  }
+  .silverpesetas {
+    height: 250px;
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main  {
+    font-size: 22px;
+  }
+  .container-part1 {
+    display: inline-flex;
+  }
+  .text1 {
+    margin-top: 140px;
+  }
+  .doublecoins {
+    margin-top: 120px;
+  }
+  .text2,
+  .text3,
+  .text4 {
+    margin-left: 50px;
+  }
+  .holecoin {
+    margin-left: 850px;
+  }
+  .four-coins {
+    margin: 30px;
+    margin-left: 480px;
+  }
+  .coins,
+  .kennedy,
+  .stock {
+    display: inline-flex;
+    width: 320px;
+    height: 170px;
+    margin-left: 100px;
+  }
+  .goldpesetas,
+  .silverpesetas {
+    margin-left: 350px;
+    height: 250px;
+    width: 470px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-
+  
 }
